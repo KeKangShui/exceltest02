@@ -63,5 +63,9 @@
     </bean>
     <!-- 开启事务注解 -->
     <tx:annotation-driven transaction-manager="transactionManager"/>
+    <!-- 文件上传表单的视图解析器 -->
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+    </bean>
 
 </beans>
